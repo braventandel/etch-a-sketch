@@ -1,13 +1,21 @@
 const container = document.getElementById("container");
 
-const numberOfSquares = 12;
+const numberOfSquares = 16;
 
-for(let i = 0; i < numberOfSquares; i++) {
+
+
+function gridbox(){
+    for(let i = 0; i < numberOfSquares; i++) {
+        for(let j = 0; j < numberOfSquares; j++) {
     const sketchbox = document.createElement('div');
     container.appendChild(sketchbox);
     sketchbox.style.color = "red";
     sketchbox.style.border = "1px solid black";
-    sketchbox.style.width = "24px";
-    sketchbox.style.height = "24px";
+    sketchbox.style.width = "36px";
+    sketchbox.style.height = "36px";
     sketchbox.classList.add("box");
 }
+    }
+};
+
+gridbox();
