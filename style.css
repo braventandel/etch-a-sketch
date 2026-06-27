@@ -25,3 +25,13 @@ h1{
     width: 576px;
     height: 576px;
 }
+
+.box{
+    border: 1px solid black;
+    height: 36px;
+    width:  36px;
+}
+
+.colored{
+    background-color: red;
+}
