@@ -12,10 +12,11 @@ body{
     margin: 0;
     height: 100vh;
     flex-direction:column;
+    background-color: whitesmoke;
 }
 
 h1{
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
 }
 #container{
 
@@ -30,8 +31,45 @@ h1{
     border: 1px solid black;
     height: 36px;
     width:  36px;
+    cursor:crosshair;
 }
 
 .colored{
     background-color: red;
+}
+
+button{
+    margin-bottom: 2vh;
+    border-width: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 12px;
+    color: #333333;
+    transition: all 200ms;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+
+button:hover {
+  background-color: #6832fb;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: white;
+}
+
+button.active:focus {
+  background-color: #6832fb;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: white;
+}
+
+button:hover {
+  transform: translateY(-1px);
 }
